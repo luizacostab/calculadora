@@ -18,3 +18,12 @@ $("#igual").click(function(){
   $("#tela").val(res);
   $(".hidden").val("");
 });
+$("#fatorial").click(function(){
+  var val = $("#tela").val();
+  var res = 1;
+  for(var count=1 ; count<=val ; count++){
+   res *= count; 
+}
+$("#tela").val(res);
+  
+});
